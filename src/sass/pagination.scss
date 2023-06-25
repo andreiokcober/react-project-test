@@ -1,0 +1,16 @@
+.page-continer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.page{
+    padding: 13px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #9e68b7;
+}
+.page-current{
+    font-size: 22px;
+    border:2px solid #d30909eb;
+}

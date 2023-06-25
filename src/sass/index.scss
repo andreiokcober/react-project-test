@@ -1,0 +1,70 @@
+@import './heder.scss'; 
+@import './posts.scss';
+@import './pagination.scss';
+@import './navBar.scss';
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+h1{
+    padding: 10px;
+    height: 50px;
+   
+}
+
+.block{
+    padding: 10px;
+}
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+.aside-1 {
+    background-color: rgb(31, 175, 79);
+    grid-area: aside-1;
+
+}
+.content{
+    background-color: rgb(103, 63, 197);
+    grid-area: content;
+}
+.aside-2 {
+    background-color: rgb(160, 33, 118);
+    grid-area: aside-2;
+    
+}
+.galalry {
+    background-color: rgb(230, 44, 84);
+    grid-area: galalry;
+    
+}
+.infomation {
+    background-color: rgb(166, 219, 219);
+    grid-area: information;
+}
+.foter {
+    background-color: rgb(185, 84, 37);
+    grid-area: foter;
+   
+}
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr minmax(500px,1fr) 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "title title title"
+    "header header header"
+    "aside-1 content aside-2"
+    "aside-1 content aside-2"
+    "aside-1 content aside-2"
+    "galalry galalry galalry"
+    "information information information"
+    "foter foter foter"
+}
+.title{
+    text-align: center  ;
+    grid-area: title;
+}
